@@ -35,13 +35,7 @@ apt-get update
 # Install Some Basic Packages
 
 apt-get install -y build-essential curl dos2unix gcc git git-flow libmcrypt4 libpcre3-dev \
-make python2.7-dev python-pip re2c supervisor unattended-upgrades whois vim
-
-# Install A Few Helpful Python Packages
-
-pip install httpie
-pip install fabric
-pip install python-simple-hipchat
+make re2c supervisor unattended-upgrades whois vim
 
 # Set My Timezone
 
@@ -50,10 +44,10 @@ ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 # Install PHP Stuffs
 
 apt-get install -y php5-cli php5-dev php-pear \
-php5-mysql php5-pgsql php5-sqlite \
+php5-mysql php5-sqlite \
 php5-apcu php5-json php5-curl php5-dev php5-gd \
 php5-gmp php5-imap php5-mcrypt php5-xdebug \
-php5-memcached php5-redis
+php5-memcached
 
 # Make MCrypt Available
 
@@ -159,12 +153,7 @@ apt-get install -y sqlite3 libsqlite3-dev
 
 # Install A Few Other Things
 
-apt-get install -y redis-server memcached beanstalkd
-
-# Configure Beanstalkd
-
-sudo sed -i "s/#START=yes/START=yes/" /etc/default/beanstalkd
-sudo /etc/init.d/beanstalkd start
+apt-get install -y memcached
 
 # Configure nginx site
 

@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:wheezy
 MAINTAINER Elie Sauveterre <contact@eliesauveterre.com>
 
 # Install packages
