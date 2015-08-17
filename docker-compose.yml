@@ -1,5 +1,5 @@
 web:
-    image: shincoder/homestead
+    image: sauveterre/homestead
     ports:
         - "8000:80" # web
         - "2222:22" # ssh

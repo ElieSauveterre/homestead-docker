@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Jaouad E. <jaouad.elmoussaoui@gmail.com>
+MAINTAINER Elie Sauveterre <contact@eliesauveterre.com>
 
 # Install packages
 ADD provision.sh /provision.sh
